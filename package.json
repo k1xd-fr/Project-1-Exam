@@ -1,0 +1,24 @@
+{
+  "name": "project-1-exam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k1xd-fr/Project-1-Exam.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k1xd-fr/Project-1-Exam/issues"
+  },
+  "homepage": "https://github.com/k1xd-fr/Project-1-Exam#readme",
+  "dependencies": {
+    "hamburger": "^0.1.1",
+    "hamburgers": "^1.2.1"
+  }
+}
