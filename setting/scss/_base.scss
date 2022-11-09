@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #444;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  font-family: "Gilroy", sans-serif;
+  background: linear-gradient(360deg, #211f20 0%, #44403f 100%) no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
+
+hr {
+  background: linear-gradient();
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5625rem;
+  color: #cfcfcf;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.container-1440 {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 15px;
+}
