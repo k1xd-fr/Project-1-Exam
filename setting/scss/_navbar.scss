@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 67px;
+
+    &__strokes {
+    display: flex;
+    gap: 20px;
+  }
+    &__link {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+  }
+    &__details {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+        &__dropdown{
+
+            &__text{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+        }
+        
+        &__auth{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__number {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+    }
+  }
+}

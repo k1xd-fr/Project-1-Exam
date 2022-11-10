@@ -1,2 +1,6 @@
-$hamburger-types:collapse;
-@import '../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+$hamburger-types: collapse;
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+.hamburger {
+  display: none;
+}

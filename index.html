@@ -1,20 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xod Academy</title>
-    <link rel="shortcut icon" href="setting/img/iconvkladka.png" type="image/x-icon">
-    <link rel="stylesheet" href="setting/css/style.css">
-</head>
-<body>
-    <header class="conteiner">
+    <link rel="shortcut icon" href="setting/img/iconvkladka.png"   type="image/x-icon"/>
+    <link rel="stylesheet" href="setting/css/style.css" />
+
+  </head>
+  <body>
+
+    <header class="conteiner header">
+      <div class="conteiner navbar">
+        <!-- * logo -->
+        <a href="#">
+          <img src="/setting/img/logo.png" alt="logo">
+        </a> 
+        <!-- * Links -->
+        <div class="navbar__strokes"> 
+            <a href="#" class="navbar__link">iconВсе курсы</a>
+            <a href="#" class="navbar__link">Мероприятия</a>
+            <a href="#" class="navbar__link">Базы знаний</a>
+            <a href="#" class="navbar__link">Карьера</a>
+        </div>
+        <!-- * sign number city-->
+            <div class="navbar__details"   >
+                <div class="navbar__details__dropdown">
+
+                    <span class="navbar__details__dropdown__text">iconНижний Новгородicon</span>
+
+                    <div class="dropdown">
+
+                        <!-- ! Drop-down  -->
+
+                    </div>
+                  </div>
+                  <span class="navbar__details__number">8 800 950-33-98 </span>
+                  <span class="navbar__details__auth">ICONВойти</span>
+            </div>
         <button class="hamburger hamburger--collapse" type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
-        </button>  
-    </header>    
-</body>
+        </button>
+      </div>
+
+    <!-- *Banner -->
+    <img src="/setting/img/banner.jpg" alt="banner" class="header__banner">
+
+    </header>
+
+  </body>
+
+    <!-- ! Hamburger -->
+    <script>
+      // Look for .hamburger
+      var hamburger = document.querySelector(".hamburger");
+      // On click
+      hamburger.addEventListener("click", function () {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        // Do something else, like open/close menu
+      });
+    </script>
+    <!-- ! -->
+
 </html>
