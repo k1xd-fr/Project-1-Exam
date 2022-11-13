@@ -1,5 +1,15 @@
+@mixin _1250px {
+  @media (max-width: 1250px) {
+    @content;
+  }
+}
 @mixin _1200px {
   @media (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin _1100px {
+  @media (max-width: 1100px) {
     @content;
   }
 }
@@ -22,8 +32,8 @@
   }
 }
 
-@mixin _320px {
-  @media (max-width: 320px) {
+@mixin _350px {
+  @media (max-width: 350px) {
     @content;
   }
 }

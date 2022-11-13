@@ -1,70 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xod Academy</title>
-    <link rel="shortcut icon" href="setting/img/iconvkladka.png"   type="image/x-icon"/>
+    <link rel="stylesheet" href="setting/fonts/icomoon-v1.0 (2)/style.css" />
+    <link
+      rel="shortcut icon"
+      href="setting/img/iconvkladka.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="setting/css/style.css" />
-
   </head>
   <body>
-
     <header class="conteiner header">
+      <!-- *NaVBaR -->
       <div class="conteiner navbar">
         <!-- * logo -->
         <a href="#">
-          <img src="/setting/img/logo.png" alt="logo">
-        </a> 
+          <img src="/setting/img/logo.png" alt="logo" class="navbar__logo" />
+        </a>
         <!-- * Links -->
-        <div class="navbar__strokes"> 
-            <a href="#" class="navbar__link">iconВсе курсы</a>
-            <a href="#" class="navbar__link">Мероприятия</a>
-            <a href="#" class="navbar__link">Базы знаний</a>
-            <a href="#" class="navbar__link">Карьера</a>
+        <div class="navbar__strokes">
+          <a href="#" class="navbar__link"
+            ><i class="icon-sandwich"></i> Все курсы</a
+          >
+          <a href="#" class="navbar__link">Мероприятия</a>
+          <a href="#" class="navbar__link">Базы знаний</a>
+          <a href="#" class="navbar__link">Карьера</a>
         </div>
         <!-- * sign number city-->
-            <div class="navbar__details"   >
-                <div class="navbar__details__dropdown">
-
-                    <span class="navbar__details__dropdown__text">iconНижний Новгородicon</span>
-
-                    <div class="dropdown">
-
-                        <!-- ! Drop-down  -->
-
-                    </div>
-                  </div>
-                  <span class="navbar__details__number">8 800 950-33-98 </span>
-                  <span class="navbar__details__auth">ICONВойти</span>
-            </div>
+        <div class="navbar__details">
+          <div class="navbar__details__dropdown">
+            <i class="icon-gid"> </i>
+            <a href="#" class="navbar__details__dropdown__text"
+              >Нижний Новгород</a
+            >
+            <i class="icon-arrow-down"></i>
+          </div>
+          <div class="navbar__auth">
+            <a href="tel:+88009503398"><i class="icon-phone phone"></i></a>
+            <a href="tel:+88009503398" class="navbar__details__number"
+              >8 800 950-33-98</a
+            >
+            <a href="#"><i class="icon-auth auth"></i></a>
+            <span class="navbar__details__auth"
+              ><i class="icon-auth"></i> Войти</span
+            >
+          </div>
+        </div>
         <button class="hamburger hamburger--collapse" type="button">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
         </button>
       </div>
 
-    <!-- *Banner -->
-    <img src="/setting/img/banner.jpg" alt="banner" class="header__banner">
-
+      <!-- *Banner -->
+      <img src="/setting/img/banner.jpg" alt="banner" class="header__banner" />
     </header>
-
   </body>
 
-    <!-- ! Hamburger -->
-    <script>
-      // Look for .hamburger
-      var hamburger = document.querySelector(".hamburger");
-      // On click
-      hamburger.addEventListener("click", function () {
-        // Toggle class "is-active"
-        hamburger.classList.toggle("is-active");
-        // Do something else, like open/close menu
-      });
-    </script>
-    <!-- ! -->
+  <!-- ! Hamburger -->
+  <script>
+    // Look for .hamburger
+    var hamburger = document.querySelector(".hamburger");
+    var navbar__strokes = document.querySelector(".navbar__strokes");
+    // On click
+    hamburger.addEventListener("click", function () {
+      // Toggle class "is-active"
+      hamburger.classList.toggle("is-active");
 
+      navbar__strokes.classList.toggle("is-active");
+      // Do something else, like open/close menu
+    });
+  </script>
+  <!-- ! -->
 </html>

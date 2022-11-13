@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?o4xl2m");
+  src: url("fonts/icomoon.eot?o4xl2m#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?o4xl2m") format("truetype"),
+    url("fonts/icomoon.woff?o4xl2m") format("woff"),
+    url("fonts/icomoon.svg?o4xl2m#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-vk:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-telegram:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-youtube:before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-facebook:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-inst:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-seting:before {
+  content: "\e905";
+  color: #00093c;
+}
+.icon-book:before {
+  content: "\e906";
+  color: #00093c;
+}
+.icon-teacher:before {
+  content: "\e907";
+  color: #00093c;
+}
+.icon-person:before {
+  content: "\e908";
+  color: #00093c;
+}
+.icon-Star:before {
+  content: "\e909";
+  color: #f7941d;
+}
+.icon-arrow-right:before {
+  content: "\e90a";
+  color: #00093c;
+}
+.icon-auth:before {
+  content: "\e90b";
+  color: #00093c;
+}
+.icon-sandwich:before {
+  content: "\e90c";
+  color: #00093c;
+  font-size: 13px;
+}
+.icon-gid:before {
+  content: "\e90d";
+  color: #00093c;
+  font-size: 17px;
+}
+.icon-arrow-down:before {
+  content: "\e90e";
+  color: #00093c;
+  font-size: 10px;
+}
+.icon-phone:before {
+  content: "\e942";
+  font-size: 17px;
+}
+@media (max-width: 768px) {
+  .icon-arrow-down:before {
+    font-size: 7px;
+    text-align: center;
+  }
+  .icon-auth:before {
+    font-size: 16px;
+    text-align: center;
+  }
+  .icon-phone:before{
+    color: black;
+    font-size: 16px;
+  }
+}
+@media (max-width: 350px) {
+  .icon-arrow-down:before {
+    font-size: 5px;
+    text-align: center;
+  }
+  .icon-gid:before {
+    font-size: 13px;
+    text-align: center;
+  }
+  .icon-auth:before {
+    font-size: 16px;
+    text-align: center;
+  }
+}

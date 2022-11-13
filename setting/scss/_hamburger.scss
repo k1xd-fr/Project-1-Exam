@@ -1,6 +1,10 @@
 $hamburger-types: collapse;
+$hamburger-layer-width         : 30px !important;
 @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
 .hamburger {
   display: none;
+  @include _1100px{
+    display: inline-block;
+  }
 }
