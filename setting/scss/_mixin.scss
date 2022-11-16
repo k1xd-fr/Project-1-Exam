@@ -20,6 +20,11 @@
     @content;
   }
 }
+@mixin _1150px {
+  @media (max-width: 1150px) {
+    @content;
+  }
+}
 @mixin _1100px {
   @media (max-width: 1100px) {
     @content;
@@ -32,8 +37,18 @@
   }
 }
 
+@mixin _800px {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
 @mixin _768px {
   @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin _670px {
+  @media (max-width: 670px) {
     @content;
   }
 }

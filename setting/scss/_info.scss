@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  @include _1150px {
+    flex-direction: column;
+    align-items: center;
+  }
   &__sova {
     position: relative;
     &__title {
@@ -39,12 +43,26 @@
       width: 762.7px;
       max-height: 75px;
       margin-left: 58.5px;
+      @include _992px {
+        width: 600px;
+      }
+      @include _670px{
+        max-width: 400px;
+        margin-left: 0px;
+        max-height: 100%;
+        justify-content: space-between;
+        align-items: center ;
+      }
+      @include _500px{
+        max-width: 350px;
+      }
       &__child {
         display: flex;
         gap: 10px;
         align-items: center;
         padding: 14px;
         cursor: pointer;
+        
 
         &__title {
           display: flex;
@@ -56,12 +74,20 @@
             font-size: 16px;
             line-height: 20px;
             color: #000000;
+            @include _500px{
+              font-size: 10px;
+              line-height: 10px;
+            }
           }
           &_p {
             font-weight: 400;
             font-size: 12px;
             line-height: 15px;
             color: #4f4f4f;
+            @include _500px{
+              font-size: 9px;
+              line-height: 5px;
+            }
           }
         }
       }
@@ -69,11 +95,19 @@
     &__button {
       margin: 40px;
       margin-left: 55px;
+      @include _800px {
+        margin: 20px;
+      }
       &__block {
         display: flex;
         gap: 20px;
         padding: 10px;
         position: relative;
+        @include _800px {
+          gap: 10px;
+          padding: 5px;
+          flex-direction: column;
+        }
       }
       &__style {
         font-weight: 500;
@@ -85,13 +119,18 @@
         color: #000000;
         border: none;
         position: relative;
+        border-radius: 10px;
         cursor: pointer;
+        @include _670px{
+          padding: 5px;
+        }
         &:hover::after {
-          opacity: 0.35;
+          opacity: 0.2;
           top: -10px;
           right: -10px;
           bottom: -10px;
           left: -10px;
+          border-radius: 20px;
         }
         &::before {
           width: 100%;
@@ -118,8 +157,8 @@
           z-index: -2;
           background: linear-gradient(90deg, #f7941d 0%, #27aae1 100%);
           opacity: 0.3;
-          filter: blur(10px);
-          border-radius: 10px;
+          filter: blur(5px);
+          border-radius: 5px;
         }
       }
     }
@@ -132,16 +171,30 @@
   margin: -4px;
   margin-left: 58px;
   background: linear-gradient(90deg, #f7941d 0%, #27aae1 100%);
+  @include _670px{
+    margin-left: 0px;
+    max-width: 100px;
+  }
 }
 .margin_left {
   margin-left: 90px;
+  @include _992px {
+    margin-left: 40px;
+  }
+  @include _670px{
+    margin-left: 10px;
+  }
+}
+.img__child{
+  @include _670px{
+    display: none;
+  }
 }
 
-
-
 // !video//
-.video{
+.video {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   cursor: pointer;
+  margin: 25px;
 }
