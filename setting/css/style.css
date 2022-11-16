@@ -364,7 +364,7 @@ h6 {
   flex-wrap: nowrap;
 }
 .header__banner {
-  background-image: url("../img/banner.jpg");
+  background-image: url("../../setting/img/banner.jpg");
   background-size: cover;
   background-position: center;
   max-width: 100%;
