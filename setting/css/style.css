@@ -143,6 +143,7 @@ h6 {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  flex-wrap: nowrap;
 }
 @media (max-width: 1150px) {
   .info {
@@ -363,7 +364,7 @@ h6 {
   flex-wrap: nowrap;
 }
 .header__banner {
-  background-image: url(/setting/img/banner.jpg);
+  background-image: url(setting/img/banner.jpg);
   background-size: cover;
   background-position: center;
   max-width: 100%;
