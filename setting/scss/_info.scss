@@ -57,6 +57,9 @@
       @include _500px{
         max-width: 350px;
       }
+      @include _350px{
+        max-width: 280px;
+      }
       &__child {
         display: flex;
         gap: 10px;
@@ -70,6 +73,9 @@
           flex-direction: column;
           padding: 5px;
           gap: 5px;
+          @include _350px{
+            padding: 0;
+          }
           &_h1 {
             font-weight: 700;
             font-size: 16px;
@@ -79,6 +85,7 @@
               font-size: 10px;
               line-height: 10px;
             }
+            
           }
           &_p {
             font-weight: 400;
@@ -176,6 +183,9 @@
     margin-left: 0px;
     max-width: 100px;
   }
+  @include _350px{
+    max-width: 80px;
+  }
 }
 .margin_left {
   margin-left: 90px;
@@ -184,6 +194,9 @@
   }
   @include _670px{
     margin-left: 10px;
+  }
+  @include _350px{
+    margin-left: 5px;
   }
 }
 .img__child{
@@ -197,5 +210,5 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
-  margin: 25px;
+  margin: 35px;
 }
