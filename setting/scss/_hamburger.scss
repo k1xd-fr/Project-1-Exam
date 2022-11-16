@@ -4,6 +4,7 @@ $hamburger-layer-width         : 30px !important;
 
 .hamburger {
   display: none;
+  z-index: 30;
   @include _1100px{
     display: inline-block;
   }
