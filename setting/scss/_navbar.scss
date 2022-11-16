@@ -60,16 +60,22 @@
     display: flex;
     gap: 40px;
     align-items: center;
+    @include _670px{
+      gap: 10px;
+    }
   }
   &__details {
     display: flex;
     gap: 40px;
     align-items: center;
+    
 
     @include _768px {
       gap: 20px;
-      flex-direction: column-reverse;
       text-align: center;
+    }
+    @include _500px{
+      flex-direction: column-reverse;
     }
 
     @include _350px{
@@ -104,8 +110,11 @@
       cursor: pointer;
       @include _768px {
         font-size: 10px;
+      }
+      @include _500px{
         display: none;
       }
+      
     }
     &__number {
       font-weight: 500;
@@ -122,7 +131,13 @@
       @include _768px {
         font-size: 13px;
         line-height: 10px;
+
+      }
+      @include _500px{
         display: none;
+      }
+      @include _670px{
+        font-size: 10px;
       }
       
     }
@@ -133,13 +148,13 @@
 }
 .phone{
   display: none;
-  @include _768px {
+  @include _500px {
     display: inline-block;
   }
 }
 .auth{
   display: none;
-  @include _768px {
+  @include _500px {
     display: inline-block;
   }
 }

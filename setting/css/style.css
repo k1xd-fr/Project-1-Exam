@@ -133,6 +133,7 @@ h6 {
 .hamburger {
   display: none;
   z-index: 30;
+  margin-left: auto;
 }
 @media (max-width: 1100px) {
   .hamburger {
@@ -537,6 +538,11 @@ h6 {
   gap: 40px;
   align-items: center;
 }
+@media (max-width: 670px) {
+  .navbar__auth {
+    gap: 10px;
+  }
+}
 .navbar__details {
   display: flex;
   gap: 40px;
@@ -545,8 +551,12 @@ h6 {
 @media (max-width: 768px) {
   .navbar__details {
     gap: 20px;
-    flex-direction: column-reverse;
     text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .navbar__details {
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 350px) {
@@ -587,6 +597,10 @@ h6 {
 @media (max-width: 768px) {
   .navbar__details__auth {
     font-size: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .navbar__details__auth {
     display: none;
   }
 }
@@ -609,7 +623,16 @@ h6 {
   .navbar__details__number {
     font-size: 13px;
     line-height: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .navbar__details__number {
     display: none;
+  }
+}
+@media (max-width: 670px) {
+  .navbar__details__number {
+    font-size: 10px;
   }
 }
 
@@ -620,7 +643,7 @@ h6 {
 .phone {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .phone {
     display: inline-block;
   }
@@ -629,7 +652,7 @@ h6 {
 .auth {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .auth {
     display: inline-block;
   }
