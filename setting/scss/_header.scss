@@ -1,6 +1,71 @@
 .header {
-    flex-wrap: nowrap;
-      &__banner {
-      max-width: 100%;
+  flex-wrap: nowrap;
+  &__banner {
+    background-image: url(/setting/img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;  
+    height: 500px;
+
+    &__title {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      padding: 127px 360px;
+      @include _1850px{
+        padding: 126px;
+      }
+      @include _1350px{
+        padding: 125px 250px 30px 0px; 
+      }
+      @include _768px{
+        padding: 100px 170px 60px 0px;
+        gap: 10px;
+      }
+      &_h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        align-items: center;
+        color: #ffffff;
+        @include _1350px{
+          font-size: 24px;
+        }
+        @include _350px{
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+      &_h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        align-items: center;
+        color: #ffffff;
+        @include _1350px{
+          font-size: 24px;
+        }
+        @include _350px{
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+      &_p {
+        padding-top: 20px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        align-items: center;
+        color: #ffffff;
+        @include _1350px{
+          font-size: 16px;
+        }
+        @include _350px{
+          font-size: 10px;
+          line-height: 20px;
+        }
+      }
     }
   }
+}
