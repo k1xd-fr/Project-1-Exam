@@ -292,7 +292,7 @@ h6 {
 }
 @media (max-width: 670px) {
   .info__select__button__style {
-    padding: 5px;
+    padding: 10px;
   }
 }
 .info__select__button__style:hover::after {

@@ -130,7 +130,7 @@
         border-radius: 10px;
         cursor: pointer;
         @include _670px{
-          padding: 5px;
+          padding: 10px;
         }
         &:hover::after {
           opacity: 0.2;
@@ -207,6 +207,7 @@
 
 // !video//
 .video {
+  
   display: flex;
   justify-content: center;
   cursor: pointer;
