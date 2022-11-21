@@ -37,7 +37,7 @@
       }
     }
   }
-  &__select  {
+  &__select {
     &__old {
       display: flex;
       border-bottom: 1px solid #e0e0e0;
@@ -47,17 +47,17 @@
       @include _992px {
         width: 600px;
       }
-      @include _670px{
+      @include _670px {
         max-width: 400px;
         margin-left: 0px;
         max-height: 100%;
         justify-content: space-between;
-        align-items: center ;
+        align-items: center;
       }
-      @include _500px{
+      @include _500px {
         max-width: 350px;
       }
-      @include _350px{
+      @include _350px {
         max-width: 280px;
       }
       &__section {
@@ -66,14 +66,13 @@
         align-items: center;
         padding: 14px;
         cursor: pointer;
-        
 
         &__title {
           display: flex;
           flex-direction: column;
           padding: 5px;
           gap: 5px;
-          @include _350px{
+          @include _350px {
             padding: 0;
           }
           &_h1 {
@@ -81,18 +80,17 @@
             font-size: 16px;
             line-height: 20px;
             color: #000000;
-            @include _500px{
+            @include _500px {
               font-size: 10px;
               line-height: 10px;
             }
-            
           }
           &_p {
             font-weight: 400;
             font-size: 12px;
             line-height: 15px;
             color: #4f4f4f;
-            @include _500px{
+            @include _500px {
               font-size: 9px;
               line-height: 5px;
             }
@@ -129,7 +127,7 @@
         position: relative;
         border-radius: 10px;
         cursor: pointer;
-        @include _670px{
+        @include _670px {
           padding: 10px;
         }
         &:hover::after {
@@ -172,28 +170,97 @@
     }
   }
   &__video {
-
     display: flex;
     justify-content: center;
     cursor: pointer;
     margin: 35px;
   }
 
-  
+  &__main {
+    margin-left: 100px;
+    @include _670px{
+      margin-left: 17px;
+    }
+    @include _500px{
+      margin-left: 0;
+    }
+    &__text {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 34px;
+      color: #000000;
+      margin-left: 20px;
+      margin-top: -70px;
+      @include _1100px {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      @include _500px {
+        margin-top: -30px;
+        font-size: 9px;
+        line-height: 16px;
+      }
+    }
+    &__aside {
+      display: flex;
+      gap: 120px;
+      margin-top: 40px;
+      margin-left: 20px;
+      @include _992px{
+        gap: 50px;
+      }
+      @include _500px{
+        gap: 30px;
+      }
+      
+      &__content {
+        display: flex;
+        flex-direction: column;
+        &_number {
+          font-weight: 700;
+          font-size: 86px;
+          line-height: 105px;
+          text-transform: capitalize;
+          color: white;
+          background: linear-gradient(90deg, #F7941D 0%,#4c8b09 25% , #27AAE1 40%);          
+          background-size: 200% 200%;
+          -webkit-background-clip: text;
+          -webkit-text-stroke: 8px transparent;
+          @include _1100px{
+            font-size: 60px;
+          line-height: 70px;
+          -webkit-text-stroke: 5px transparent;
+          }
+          @include _992px{
+            font-size: 40px;
+          line-height: 40px;
+          }
+          @include _500px{
+            font-size: 34px;
+          line-height: 40px;
+          }
+          @include _350px{
+            font-size: 23px;
+            -webkit-text-stroke: 3px transparent;
+          }
+        }
+        &_text {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 34px;
+          @include _1100px{
+            font-size: 16px;
+            line-height: 24px;
+          }
+          @include _500px{
+            font-size: 10.5px;
+            line-height: 14px;
+          }
+        }
+      }
+    }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .border__progress {
   max-width: 160px;
@@ -201,11 +268,11 @@
   margin: -4px;
   margin-left: 58px;
   background: linear-gradient(90deg, #f7941d 0%, #27aae1 100%);
-  @include _670px{
+  @include _670px {
     margin-left: 0px;
     max-width: 100px;
   }
-  @include _350px{
+  @include _350px {
     max-width: 80px;
   }
 }
@@ -214,16 +281,15 @@
   @include _992px {
     margin-left: 40px;
   }
-  @include _670px{
+  @include _670px {
     margin-left: 10px;
   }
-  @include _350px{
+  @include _350px {
     margin-left: 5px;
   }
 }
-.icon__section{
-  @include _670px{
+.icon__section {
+  @include _670px {
     display: none;
   }
 }
-
