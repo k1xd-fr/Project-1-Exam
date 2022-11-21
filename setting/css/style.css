@@ -330,6 +330,12 @@ h6 {
   filter: blur(5px);
   border-radius: 5px;
 }
+.info__video {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin: 35px;
+}
 
 .border__progress {
   max-width: 160px;
@@ -373,13 +379,6 @@ h6 {
   .icon__section {
     display: none;
   }
-}
-
-.video {
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  margin: 35px;
 }
 
 .header {

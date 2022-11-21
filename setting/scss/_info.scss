@@ -37,7 +37,7 @@
       }
     }
   }
-  &__select {
+  &__select  {
     &__old {
       display: flex;
       border-bottom: 1px solid #e0e0e0;
@@ -171,7 +171,29 @@
       }
     }
   }
+  &__video {
+
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: 35px;
+  }
+
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .border__progress {
   max-width: 160px;
@@ -205,11 +227,3 @@
   }
 }
 
-// !video//
-.video {
-  
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  margin: 35px;
-}
