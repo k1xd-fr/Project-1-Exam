@@ -147,6 +147,7 @@ h6 {
   max-width: 100%;
   max-height: 611.43px;
   object-fit: cover;
+  padding-bottom: 30px;
 }
 .comments__title {
   display: flex;
