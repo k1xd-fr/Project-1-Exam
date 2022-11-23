@@ -1,0 +1,74 @@
+.comments {
+  background-image: url(../../setting/img/banner_comments.png);
+  margin-top: 90px;
+  max-width: 100%;
+  max-height: 611.43px;
+  object-fit: cover;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    &_h1 {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      color: #ffffff;
+      @include _500px{
+      font-size: 20px;
+      }
+      @include _350px{
+        font-size: 18px;
+      }
+    }
+  }
+  &__block {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 105px;
+    &::-webkit-scrollbar {
+      background:rgb(255, 255, 255);
+      max-height: 4px;
+    }
+    &::-webkit-scrollbar-thumb{
+      background: linear-gradient(90deg, #f7941d 0%, #27aae1 100%);
+    }
+
+    &__person {
+      background-color: white;
+      min-width: 280px;
+      border-radius: 20px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &_name {
+        display: flex;
+        gap: 15px;
+        &__title {
+          display: flex;
+          flex-direction: column;
+          gap: 7px;
+          &_h1 {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+          }
+          &_p {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: #4f4f4f;
+            max-width: 190px;
+          }
+        }
+      }
+    }
+  }
+}
+.height{
+  max-height: 280px !important;
+}
