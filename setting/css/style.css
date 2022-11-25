@@ -185,7 +185,7 @@ h6 {
 .comments__block::-webkit-scrollbar-thumb {
   background: linear-gradient(90deg, #f7941d 0%, #27aae1 100%);
 }
-.comments__block__person {
+.comments__person {
   background-color: white;
   min-width: 280px;
   border-radius: 20px;
@@ -194,21 +194,21 @@ h6 {
   flex-direction: column;
   gap: 20px;
 }
-.comments__block__person_name {
+.comments__person_name {
   display: flex;
   gap: 15px;
 }
-.comments__block__person_name__title {
+.comments__person__title {
   display: flex;
   flex-direction: column;
   gap: 7px;
 }
-.comments__block__person_name__title_h1 {
+.comments__person__title_h1 {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
 }
-.comments__block__person_name__title_p {
+.comments__person__title_p {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -235,7 +235,7 @@ h6 {
 .info__sova {
   position: relative;
 }
-.info__sova__title {
+.info__sova__text {
   position: absolute;
   top: 15px;
   left: 60px;
@@ -243,25 +243,25 @@ h6 {
   flex-direction: column;
   gap: 20px;
 }
-.info__sova__title__text {
+.info__sova__title {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
 }
-.info__sova__title__p {
+.info__sova__p {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
 }
-.info__sova__title__end {
+.info__sova__end {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
 }
-.info__select__old {
+.info__old {
   display: flex;
   border-bottom: 1px solid #e0e0e0;
   width: 762.7px;
@@ -269,12 +269,12 @@ h6 {
   margin-left: 58.5px;
 }
 @media (max-width: 992px) {
-  .info__select__old {
+  .info__old {
     width: 600px;
   }
 }
 @media (max-width: 670px) {
-  .info__select__old {
+  .info__old {
     max-width: 400px;
     margin-left: 0px;
     max-height: 100%;
@@ -283,80 +283,81 @@ h6 {
   }
 }
 @media (max-width: 500px) {
-  .info__select__old {
+  .info__old {
     max-width: 350px;
   }
 }
 @media (max-width: 350px) {
-  .info__select__old {
+  .info__old {
     max-width: 280px;
   }
 }
-.info__select__old__section {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  padding: 14px;
-  cursor: pointer;
-}
-.info__select__old__section__title {
+.info__old__title {
   display: flex;
   flex-direction: column;
   padding: 5px;
   gap: 5px;
+  max-width: 123px;
 }
 @media (max-width: 350px) {
-  .info__select__old__section__title {
+  .info__old__title {
     padding: 0;
   }
 }
-.info__select__old__section__title_h1 {
+.info__old__title_h1 {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
 }
 @media (max-width: 500px) {
-  .info__select__old__section__title_h1 {
+  .info__old__title_h1 {
     font-size: 10px;
     line-height: 10px;
   }
 }
-.info__select__old__section__title_p {
+.info__old__title_p {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: #4f4f4f;
 }
 @media (max-width: 500px) {
-  .info__select__old__section__title_p {
+  .info__old__title_p {
     font-size: 9px;
     line-height: 5px;
   }
 }
-.info__select__button {
+.info__old__section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 14px;
+  cursor: pointer;
+}
+.info__button {
   margin: 40px;
   margin-left: 55px;
 }
 @media (max-width: 800px) {
-  .info__select__button {
+  .info__button {
     margin: 20px;
   }
 }
-.info__select__button__block {
+.info__button__block {
   display: flex;
   gap: 20px;
   padding: 10px;
   position: relative;
 }
 @media (max-width: 800px) {
-  .info__select__button__block {
+  .info__button__block {
     gap: 10px;
     padding: 5px;
     flex-direction: column;
   }
 }
-.info__select__button__style {
+.info__btn {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -370,11 +371,11 @@ h6 {
   cursor: pointer;
 }
 @media (max-width: 670px) {
-  .info__select__button__style {
+  .info__btn {
     padding: 10px;
   }
 }
-.info__select__button__style:hover::after {
+.info__btn:hover::after {
   opacity: 0.2;
   top: -10px;
   right: -10px;
@@ -382,7 +383,7 @@ h6 {
   left: -10px;
   border-radius: 20px;
 }
-.info__select__button__style::before {
+.info__btn::before {
   width: 100%;
   height: 100%;
   top: 0;
@@ -395,7 +396,7 @@ h6 {
   opacity: 1;
   border-radius: 6px;
 }
-.info__select__button__style::after {
+.info__btn::after {
   transition: 0.3s;
   bottom: 0;
   top: 0;
@@ -441,7 +442,8 @@ h6 {
     margin: 0;
   }
 }
-.info__main__text {
+
+.main__text {
   font-weight: 700;
   font-size: 24px;
   line-height: 34px;
@@ -452,18 +454,18 @@ h6 {
   margin-right: 400px;
 }
 @media (max-width: 1200px) {
-  .info__main__text {
+  .main__text {
     margin-right: 0;
   }
 }
 @media (max-width: 500px) {
-  .info__main__text {
+  .main__text {
     margin-top: -30px;
     font-size: 16px;
     line-height: 1.2;
   }
 }
-.info__main__aside {
+.main__aside {
   display: flex;
   gap: 120px;
   margin-top: 40px;
@@ -471,25 +473,25 @@ h6 {
   margin-right: 320px;
 }
 @media (max-width: 1200px) {
-  .info__main__aside {
+  .main__aside {
     margin-right: 0;
   }
 }
 @media (max-width: 992px) {
-  .info__main__aside {
+  .main__aside {
     gap: 50px;
   }
 }
 @media (max-width: 500px) {
-  .info__main__aside {
+  .main__aside {
     gap: 30px;
   }
 }
-.info__main__aside__content {
+.main__aside__content {
   display: flex;
   flex-direction: column;
 }
-.info__main__aside__content_number {
+.main__aside__number {
   font-weight: 700;
   font-size: 86px;
   line-height: 105px;
@@ -501,48 +503,48 @@ h6 {
   -webkit-text-stroke: 8px transparent;
 }
 @media (max-width: 1100px) {
-  .info__main__aside__content_number {
+  .main__aside__number {
     font-size: 60px;
     line-height: 70px;
     -webkit-text-stroke: 5px transparent;
   }
 }
 @media (max-width: 992px) {
-  .info__main__aside__content_number {
+  .main__aside__number {
     font-size: 40px;
     line-height: 40px;
   }
 }
 @media (max-width: 500px) {
-  .info__main__aside__content_number {
+  .main__aside__number {
     font-size: 34px;
     line-height: 40px;
   }
 }
 @media (max-width: 350px) {
-  .info__main__aside__content_number {
+  .main__aside__number {
     font-size: 23px;
     -webkit-text-stroke: 3px transparent;
   }
 }
-.info__main__aside__content_text {
+.main__aside__text {
   font-weight: 500;
   font-size: 20px;
   line-height: 34px;
 }
 @media (max-width: 1100px) {
-  .info__main__aside__content_text {
+  .main__aside__text {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media (max-width: 500px) {
-  .info__main__aside__content_text {
+  .main__aside__text {
     font-size: 10.5px;
     line-height: 14px;
   }
 }
-.info__main__block {
+.main__block {
   margin-top: 80px;
   gap: 20px;
   display: grid;
@@ -550,45 +552,45 @@ h6 {
   max-width: 1180.18px;
 }
 @media (max-width: 1250px) {
-  .info__main__block {
+  .main__block {
     display: inline-block;
     max-width: 500px;
   }
 }
 @media (max-width: 1100px) {
-  .info__main__block {
+  .main__block {
     margin-left: 220px;
   }
 }
 @media (max-width: 992px) {
-  .info__main__block {
+  .main__block {
     margin-left: 200px;
   }
 }
 @media (max-width: 800px) {
-  .info__main__block {
+  .main__block {
     margin-left: 100px;
   }
 }
 @media (max-width: 670px) {
-  .info__main__block {
+  .main__block {
     margin-left: 60px;
     max-width: 450px;
   }
 }
 @media (max-width: 500px) {
-  .info__main__block {
+  .main__block {
     margin-left: 40px;
     max-width: 300px;
   }
 }
 @media (max-width: 350px) {
-  .info__main__block {
+  .main__block {
     max-width: 250px;
     margin-left: 40px;
   }
 }
-.info__main__block__day-open-door {
+.main__block__day-open-door {
   display: flex;
   background-color: #f7bc75;
   padding: 44px;
@@ -597,51 +599,51 @@ h6 {
   grid-column: span 3;
 }
 @media (max-width: 1250px) {
-  .info__main__block__day-open-door {
+  .main__block__day-open-door {
     display: block;
     text-align: center;
     margin-bottom: 10px;
   }
 }
-.info__main__block__day-open-door_date {
+.main__block__day-open-door_date {
   display: flex;
   flex-direction: column;
 }
-.info__main__block__day-open-door_date_num {
+.main__block__day-open-door_date_num {
   color: #000000;
   font-size: 100px;
   line-height: 80px;
   font-weight: 700;
 }
-.info__main__block__day-open-door_date_season {
+.main__block__day-open-door_date_season {
   color: #000000;
   font-size: 30px;
   font-weight: 700;
 }
-.info__main__block__day-open-door_text {
+.main__block__day-open-door_text {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.info__main__block__day-open-door_text_title {
+.main__block__day-open-door_text_title {
   font-weight: 500;
   font-size: 36px;
   line-height: 26px;
 }
-.info__main__block__day-open-door_text_p {
+.main__block__day-open-door_text_p {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
   color: #333333;
   max-width: 717px;
 }
-.info__main__block__day-open-door_button {
+.main__block__day-open-door_button {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.info__main__block__day-open-door_button_btn {
+.main__block__day-open-door_button_btn {
   padding: 18px 67px;
   background-color: #f7bc75;
   cursor: pointer;
@@ -649,7 +651,7 @@ h6 {
   gap: 10px;
   text-align: center;
 }
-.info__main__block__program {
+.main__block__program {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -661,27 +663,27 @@ h6 {
   grid-row: span 2;
 }
 @media (max-width: 1250px) {
-  .info__main__block__program {
+  .main__block__program {
     margin-bottom: 10px;
   }
 }
-.info__main__block__program_title {
+.main__block__program_title {
   font-weight: 500;
   font-size: 24px;
   line-height: 26px;
 }
-.info__main__block__program_p {
+.main__block__program_p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #333333;
   max-width: 400px;
 }
-.info__main__block__program_btn {
+.main__block__program_btn {
   background: #c5ddff;
   padding: 12px 61px;
 }
-.info__main__block__news {
+.main__block__news {
   background: #b8efcf;
   border-radius: 20px;
   display: flex;
@@ -691,18 +693,18 @@ h6 {
   cursor: pointer;
   gap: 45px;
 }
-.info__main__block__news_title {
+.main__block__news_title {
   font-weight: 500;
   font-size: 24px;
   line-height: 26px;
 }
 @media (max-width: 1250px) {
-  .info__main__block__news {
+  .main__block__news {
     margin-bottom: 10px;
     padding: 30px;
   }
 }
-.info__main__block__world-it {
+.main__block__world-it {
   background: #ffeef6;
   border-radius: 20px;
   display: flex;
@@ -713,17 +715,17 @@ h6 {
   cursor: pointer;
 }
 @media (max-width: 1250px) {
-  .info__main__block__world-it {
+  .main__block__world-it {
     padding: 30px;
     margin-bottom: 10px;
   }
 }
-.info__main__block__world-it_title {
+.main__block__world-it_title {
   font-weight: 500;
   font-size: 24px;
   line-height: 26px;
 }
-.info__main__block__test {
+.main__block__test {
   display: flex;
   padding: 40px;
   align-items: center;
@@ -734,22 +736,22 @@ h6 {
   grid-column: span 2;
 }
 @media (max-width: 670px) {
-  .info__main__block__test {
+  .main__block__test {
     flex-direction: column;
   }
 }
-.info__main__block__test_title {
+.main__block__test_title {
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
 }
-.info__main__block__test_title_h1 {
+.main__block__test_title_h1 {
   font-weight: 500;
   font-size: 24px;
   line-height: 26px;
 }
-.info__main__block__test_title_p {
+.main__block__test_title_p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -783,7 +785,7 @@ h6 {
 }
 
 .margin_left {
-  margin-left: 90px;
+  margin-left: 70px;
 }
 @media (max-width: 992px) {
   .margin_left {
@@ -1124,6 +1126,39 @@ h6 {
   .auth {
     display: inline-block;
   }
+}
+
+.footer {
+  position: relative;
+}
+.footer__welcome {
+  padding: 85px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__nav {
+  background: #00093c;
+  max-width: 100%;
+}
+
+.welcome__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 34px;
+  margin-left: -190px;
+}
+.welcome__info {
+  display: flex;
+  padding: 60px 0;
+}
+.welcome__p {
+  max-width: 280px;
+}
+.welcome__block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -46,21 +46,25 @@
   content: "\e904";
   color: #fff;
 }
-.icon-seting:before {
+.icon-setting:before {
   content: "\e905";
   color: #00093c;
+  font-size: 60px;
 }
 .icon-book:before {
   content: "\e906";
   color: #00093c;
+  font-size: 60px;
 }
 .icon-teacher:before {
   content: "\e907";
   color: #00093c;
+  font-size: 60px;
 }
 .icon-person:before {
   content: "\e908";
   color: #00093c;
+  font-size: 60px;
 }
 .icon-Star:before {
   content: "\e909";

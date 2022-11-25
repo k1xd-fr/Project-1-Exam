@@ -38,34 +38,34 @@
       background: linear-gradient(90deg, #f7941d 0%, #27aae1 100%);
     }
 
-    &__person {
-      background-color: white;
-      min-width: 280px;
-      border-radius: 20px;
-      padding: 30px;
+  } 
+  &__person {
+    background-color: white;
+    min-width: 280px;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &_name {
+      display: flex;
+      gap: 15px;
+    }
+    &__title {
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      &_name {
-        display: flex;
-        gap: 15px;
-        &__title {
-          display: flex;
-          flex-direction: column;
-          gap: 7px;
-          &_h1 {
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 17px;
-          }
-          &_p {
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 15px;
-            color: #4f4f4f;
-            max-width: 190px;
-          }
-        }
+      gap: 7px;
+      &_h1 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+      }
+      &_p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #4f4f4f;
+        max-width: 190px;
       }
     }
   }
