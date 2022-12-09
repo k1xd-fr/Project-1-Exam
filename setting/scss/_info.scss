@@ -280,29 +280,22 @@
     grid-template-columns: minmax(480px, 1fr) repeat(2, minmax(330px, 1fr));
     max-width: 1180.18px;
     @include _1250px {
-      display: inline-block;
+      display: block;
       max-width: 500px;
-    }
-    @include _1100px {
-      margin-left: 220px;
-    }
-    @include _992px {
-      margin-left: 200px;
-    }
-    @include _800px {
-      margin-left: 100px;
+      margin: 0 auto;
+      margin-top: 20px;
     }
     @include _670px {
-      margin-left: 60px;
       max-width: 450px;
+      margin: 0 auto;
     }
     @include _500px {
-      margin-left: 40px;
       max-width: 300px;
+      margin: 0 auto;
     }
     @include _350px {
       max-width: 250px;
-      margin-left: 40px;
+      margin: 0 auto;
     }
     &__day-open-door {
       display: flex;
@@ -357,10 +350,9 @@
         &_btn {
           padding: 18px 67px;
           background-color: #f7bc75;
-          cursor: pointer;
-          display: flex;
           gap: 10px;
-          text-align: center;
+          display: flex;
+          align-items: center;
         }
       }
     }
@@ -391,7 +383,14 @@
       }
       &_btn {
         background: #c5ddff;
-        padding: 12px 61px;
+        padding: 12px 60px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 26px;
+        display: flex;
+        color: #00093C;
+        align-items: center;
+        gap: 10px;
       }
     }
     &__news {

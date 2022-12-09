@@ -29,22 +29,27 @@
 .icon-vk:before {
   content: "\e900";
   color: #fff;
+  font-size: 13px;
 }
 .icon-telegram:before {
   content: "\e901";
   color: #fff;
+  font-size: 15px;
 }
 .icon-youtube:before {
   content: "\e902";
   color: #fff;
+  font-size: 15px;
 }
 .icon-facebook:before {
   content: "\e903";
   color: #fff;
+  font-size: 15px;
 }
 .icon-inst:before {
   content: "\e904";
   color: #fff;
+  font-size: 15px;
 }
 .icon-setting:before {
   content: "\e905";
@@ -73,6 +78,8 @@
 .icon-arrow-right:before {
   content: "\e90a";
   color: #00093c;
+  font-size: 12px;
+  text-align: center;
 }
 .icon-auth:before {
   content: "\e90b";
