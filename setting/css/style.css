@@ -550,6 +550,7 @@ h6 {
   display: grid;
   grid-template-columns: minmax(480px, 1fr) repeat(2, minmax(330px, 1fr));
   max-width: 1180.18px;
+  padding-top: 15px;
 }
 @media (max-width: 1250px) {
   .main__block {
@@ -615,7 +616,7 @@ h6 {
 .main__block__day-open-door_text_title {
   font-weight: 500;
   font-size: 36px;
-  line-height: 26px;
+  line-height: 30px;
 }
 .main__block__day-open-door_text_p {
   font-weight: 400;
